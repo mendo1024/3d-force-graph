@@ -13,6 +13,11 @@
     const Graph = ForceGraph3D()
       (document.getElementById('3d-graph'))
         .nodeAutoColorBy('group')
+        .nodeLabel('id')
+        .linkDirectionalArrowLength(3.5)
+        .linkDirectionalArrowRelPos(1)
+        .linkDirectionalParticles("value")
+        .linkDirectionalParticleSpeed(d => d.value * 0.001)
         .jsonUrl('../datasets/cybrainz.json');
   </script>
 </body>
