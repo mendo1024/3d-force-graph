@@ -33,7 +33,7 @@
         .jsonUrl('../datasets/cybrainz.json')
         .nodeThreeObject(node => {
            const nodeEl = document.createElement('div');
-           nodeEl.textContent = node.id;
+           nodeEl.textContent = node.name;
            nodeEl.style.color = node.color;
            nodeEl.className = 'node-label';
            return new THREE.CSS2DObject(nodeEl);
