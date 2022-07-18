@@ -3,87 +3,94 @@
         {
           "id": "S6C001",
           "name": "Sandworm",
-          "val": 1
+          "val": 1,
+	  "group": "Advanced Persistent Threat"
         },
         {
           "id": "S0C001",
           "name": "Ukraine Power Grid",
-          "val": 2
+          "val": 2,
+	  "group": "Target"
         },
         {
-		  "id": "S0C002",
-		  "name": "Ukrain Critical Infrastructure",
-		  "val": 2
-		},
-		{
-		  "id": "S9C001",
-		  "name": "Supplier Diversity",
-		  "val": 3
-		},
-		{
-		  "id": "S9C002",
-		  "name": "Patch Management",
-		  "val": 3
-		},
-		{
-		  "id": "S9C003",
-		  "name": "Backup Strategy",
-		  "val": 3
-		},
-				{
-		  "id": "S9C004",
-		  "name": "EMail Security Practices",
-		  "val": 3
-		}
+	  "id": "S0C002",
+	  "name": "Ukrain Critical Infrastructure",
+	  "val": 2,
+	  "group": "Target"
+	},
+	{
+	  "id": "S9C001",
+	  "name": "Supplier Diversity",
+	  "val": 3,
+	  "group": "Security Measure"
+	},
+	{
+	  "id": "S9C002",
+	  "name": "Patch Management",
+	  "val": 3,
+	  "group": "Security Measure"
+	},
+	{
+	  "id": "S9C003",
+	  "name": "Backup Strategy",
+	  "val": 3,
+	  "group": "Security Measure"
+	},
+	{
+	  "id": "S9C004",
+	  "name": "EMail Security Practices",
+	  "val": 3,
+	  "group": "Security Measure"
+	}
     ],
     "links": [
         {
-            "source": "S6C001",
-            "target": "S0C001"
+           "source": "S6C001",
+           "target": "S0C001"
         },
-		{
-			"source": "S6C001",
-			"target": "S0C002"
-		},
-		{
-		    "source": "S6C001",
-			"target": "S0C002"
-		},
-		{
-		    "source": "S6C001",
-			"target": "S9C001"
-		},
-		{
-		    "source": "S6C001",
-			"target": "S9C002"
-		},
-		{
-		    "source": "S6C001",
-			"target": "S9C003"
-		},
-		{
-		    "source": "S6C001",
-			"target": "S9C004"
-		},
-		{
-		    "source": "S9C001",
-			"target": "S0C001"
-		},
-		{
-		    "source": "S9C002",
-			"target": "S0C001"
-		},
-		{
-		    "source": "S9C002",
-			"target": "S0C002"
-		},
-		{
-		    "source": "S9C003",
-			"target": "S0C002"
-		},
-		{
-		    "source": "S9C004",
-			"target": "S0C002"
-		}
+	{
+	   "source": "S6C001",
+	   "target": "S0C002"
+	},
+	{
+	   "source": "S6C001",
+	   "target": "S0C002"
+	},
+	{
+	   "source": "S6C001",
+	   "target": "S9C001"
+	},
+	{
+	   "source": "S6C001",
+	   "target": "S9C002"
+	},
+	{
+	   "source": "S6C001",
+	   "target": "S9C003"
+	},
+	{
+	   "source": "S6C001",
+	   "target": "S9C004"
+	},
+	{
+	   "source": "S9C001",
+	   "target": "S0C001"
+	},
+	{
+	   "source": "S9C002",
+	   "target": "S0C001"
+	},
+	{
+	   "source": "S9C002",
+	   "target": "S0C002"
+	},
+	{
+	   "source": "S9C003",
+	   "target": "S0C002"
+	},
+	{
+	   "source": "S9C004",
+	   "target": "S0C002"
+	}
     ]
 }
