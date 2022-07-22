@@ -26,10 +26,14 @@
       (document.getElementById('3d-graph'))
         .nodeAutoColorBy('group')
         .nodeResolution(50)
-        .linkDirectionalArrowLength(3.5)
-        .linkDirectionalArrowRelPos(1)
+        .linkResolution(50)
+        .linkDirectionalArrowLength(2)
+        .linkDirectionalArrowRelPos(0)
+        .linkDirectionalArrowResolution(50)
         .linkDirectionalParticles("value")
         .linkDirectionalParticleSpeed(d => d.value * 0.001)
+        .linkAutoColorBy('group')
+        .linkWidth(5)
         .jsonUrl('../datasets/cybrainz.json')
         .nodeThreeObject(node => {
            const nodeEl = document.createElement('div');
