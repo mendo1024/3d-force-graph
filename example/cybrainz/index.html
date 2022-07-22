@@ -2,6 +2,7 @@
 <head>
   <style> body { margin: 0; } </style>
   <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three-spritetext"></script>
   <script src="//unpkg.com/three/examples/js/renderers/CSS2DRenderer.js"></script>
   <script src="//unpkg.com/3d-force-graph"></script>
   <!--<script src="../../dist/3d-force-graph.js"></script>-->
@@ -42,6 +43,21 @@
            return new THREE.CSS2DObject(nodeEl);
         })
         .nodeThreeObjectExtend(true)
+        .linkThreeObject(link => {
+          // extend link with text sprite
+          const sprite = new SpriteText(`${link.source} > ${link.target}`);
+          sprite.color = 'lightgrey';
+          sprite.textHeight = 1.5;
+          return sprite;
+        })
+          .linkPositionUpdate((sprite, { start, end }) => {
+          const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
+            [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
+          })));
+
+          // Position sprite
+          Object.assign(sprite.position, middlePos);
+        })
         .onNodeClick(node => {
           // Aim at node from outside it
           const distance = 100;
