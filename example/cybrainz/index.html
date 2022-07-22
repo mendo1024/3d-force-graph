@@ -45,9 +45,9 @@
         .nodeThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
-          const sprite = new SpriteText(`${link.source} > ${link.target}`);
+          const sprite = new SpriteText(`${link.group}`);
           sprite.color = 'lightgrey';
-          sprite.textHeight = 1.5;
+          sprite.textHeight = 1;
           return sprite;
         })
           .linkPositionUpdate((sprite, { start, end }) => {
