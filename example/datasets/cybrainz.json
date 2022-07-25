@@ -47,47 +47,47 @@
 	{
 	   "source": "S6C001",
 	   "target": "S9C001",
-	   "group": "exploiting poor"
+	   "group": "exploit"
 	},
 	{
 	   "source": "S6C001",
 	   "target": "S9C002",
-	   "group": "exploiting poor"
+	   "group": "exploit"
 	},
 	{
 	   "source": "S6C001",
 	   "target": "S9C003",
-	   "group": "exploiting poor"
+	   "group": "exploit"
 	},
 	{
 	   "source": "S6C001",
 	   "target": "S9C004",
-	   "group": "exploiting poor"
+	   "group": "exploit"
 	},
 	{
 	   "source": "S9C001",
 	   "target": "S0C001",
-	   "group": "disrupting"
+	   "group": "disrupt"
 	},
 	{
 	   "source": "S9C002",
 	   "target": "S0C001",
-	   "group": "disrupting"
+	   "group": "disrupt"
 	},
 	{
 	   "source": "S9C002",
 	   "target": "S0C002",
-	   "group": "disrupting"
+	   "group": "disrupt"
 	},
 	{
 	   "source": "S9C003",
 	   "target": "S0C002",
-	   "group": "disrupting"
+	   "group": "disrupt"
 	},
 	{
 	   "source": "S9C004",
 	   "target": "S0C002",
-	   "group": "disrupting"
+	   "group": "disrupt"
 	}
     ]
 }
