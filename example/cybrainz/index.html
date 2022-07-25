@@ -34,6 +34,8 @@
         .linkDirectionalArrowResolution(50)
         .linkDirectionalParticles("value")
         .linkDirectionalParticleSpeed(d => d.value * 0.001)
+        .linkCurvature('curvature')
+        .linkCurveRotation('rotation')
         .linkAutoColorBy('group')
         .jsonUrl('../datasets/cybrainz.json')
         .nodeThreeObject(node => {
