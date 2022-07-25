@@ -43,22 +43,22 @@
            nodeEl.className = 'node-label';
            return new THREE.CSS2DObject(nodeEl);
         })
-        .nodeThreeObjectExtend(true)
-        .linkThreeObject(link => {
-          // extend link with text sprite
-          const sprite = new SpriteText(`${link.group}`);
-          sprite.color = 'lightgrey';
-          sprite.textHeight = 1;
-          return sprite;
-        })
+        //.nodeThreeObjectExtend(true)
+        //.linkThreeObject(link => {
+        //// extend link with text sprite
+        //  const sprite = new SpriteText(`${link.group}`);
+        //  sprite.color = 'lightgrey';
+        //  sprite.textHeight = 1;
+        //  return sprite;
+        //})
         //  .linkPositionUpdate((sprite, { start, end }) => {
         //  const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
         //    [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
         //  })));
 
-          // Position sprite
+        //// Position sprite
         //  Object.assign(sprite.position, middlePos);
-        })
+        //})
         .onNodeClick(node => {
           // Aim at node from outside it
           const distance = 100;
