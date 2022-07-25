@@ -51,13 +51,13 @@
           sprite.textHeight = 1;
           return sprite;
         })
-          .linkPositionUpdate((sprite, { start, end }) => {
-          const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
-            [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
-          })));
+        //  .linkPositionUpdate((sprite, { start, end }) => {
+        //  const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
+        //    [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
+        //  })));
 
           // Position sprite
-          Object.assign(sprite.position, middlePos);
+        //  Object.assign(sprite.position, middlePos);
         })
         .onNodeClick(node => {
           // Aim at node from outside it
